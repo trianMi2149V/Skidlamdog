@@ -13,7 +13,7 @@ local v15 = v14:CreateWindow({
 });
 local v16 = {
     Home = v15:AddTab({
-        Title = "🪪 Thông Tin"
+        Title = "📬 Thông Tin"
     }),
     Main = v15:AddTab({
         Title = "💪 Fram"
@@ -43,7 +43,7 @@ local v16 = {
         Title = "🤡 Giả"
     }),
     Fruit = v15:AddTab({
-        Title = "Trái 🍎"
+        Title = "🍎 Trái"
     }),
     Raid = v15:AddTab({
         Title = "⚔️ Tập kích"
@@ -7181,7 +7181,7 @@ spawn(function()
 end);
 local v56 = v16.Fruit:AddSection("Định Vị");
 local v130 = v16.Fruit:AddToggle("ToggleEspPlayer", {
-    Title = "Người Chơi",
+    Title = "Định vị Người chơi",
     Description = "",
     Default = false
 });
@@ -7191,9 +7191,9 @@ v130:OnChanged(function(v345)
 end);
 v17.ToggleEspPlayer:SetValue(false);
 local v131 = v16.Fruit:AddToggle("ToggleEspFruit", {
-    Title = "Trái",
+    Title = "Định vị Trái",
     Description = "",
-    Default = false
+    Default = true
 });
 v131:OnChanged(function(v346)
     DevilFruitESP = v346;
@@ -7204,7 +7204,7 @@ v131:OnChanged(function(v346)
 end);
 v17.ToggleEspFruit:SetValue(false);
 local v132 = v16.Fruit:AddToggle("ToggleEspIsland", {
-    Title = "Đảo",
+    Title = "Định vị Đảo",
     Description = "",
     Default = false
 });
@@ -7217,7 +7217,7 @@ v132:OnChanged(function(v347)
 end);
 v17.ToggleEspIsland:SetValue(false);
 local v133 = v16.Fruit:AddToggle("ToggleEspFlower", {
-    Title = "Hoa",
+    Title = "Định vị Hoa",
     Description = "",
     Default = false
 });
